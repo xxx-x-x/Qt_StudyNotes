@@ -12,6 +12,11 @@ Qt setting file,please don't alter it if you don't know how to use this file. Lo
 
 using ```new``` to create object,it will be released automatically if assigned parent class. 
 
+### ```Qt coordinate system ```
+1. Top-left corner is ```origin``` 0,0
+2. Horizontal is ```x```
+3. Vertical is ```y```
+
 ### ```Function```
 
 ```show()```  to show window in the top.
@@ -27,3 +32,6 @@ using ```new``` to create object,it will be released automatically if assigned p
 ```btn->setText()``` to set button text.
 
 ```btn->move()``` to set button 's position in main window panel.
+
+### ```Signal and slot```
+The signal **send** and **recv** is irrelevant
