@@ -17,9 +17,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
+    mybutton.cpp \
     widget.cpp
 
 HEADERS += \
+    mybutton.h \
     widget.h
 
 TRANSLATIONS += \
