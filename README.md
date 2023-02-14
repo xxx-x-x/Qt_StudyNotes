@@ -8,7 +8,7 @@ Qt setting file,please don't alter it if you don't know how to use this file. Lo
 
 ### ```ObjectTree```
 
-![na](https://yy.xx-xzh.xyz/pictures/objecttree.png)
+![na](/home/xxxzh/Desktop/QTcode/Pictures/duixiangshu.png)
 
 using ```new``` to create object,it will be released automatically if assigned parent class. 
 
@@ -74,9 +74,9 @@ The signal **send** and **receive** is irrelevant
 
 ### QMainWindow
 
-![s](https://yy.xx-xzh.xyz/pictures/mainwindows.png)
+![s](/home/xxxzh/Desktop/QTcode/Pictures/mainwindows.png)
 
-**Tips: only exist one using ```set```, allow exist multiple using ```add``` **
+**Tips: only exist one using ```set```, allow exist multiple using ```add```**
 
 **QmenuBar**
 
@@ -97,4 +97,56 @@ The signal **send** and **receive** is irrelevant
 
 1. ```QDockWidget```
 2. ```addDockWidget```
+
+**QDialog**
+
+It have two models : Modal and non-modal 
+
+```C++
+//no modal
+        QDialog *qd1 = new QDialog(this);
+        qd1->resize(100,100);
+        qd1->show();
+        qd1->setAttribute(Qt::WA_DeleteOnClose);
+//modal
+        QDialog qd(this);
+        qd.resize(100,100);
+        qd.exec();
+```
+
+**MessageBox**
+
+1. ```MessageBox::critical()```
+2. ```MessageBox::information()```
+3. ```MessageBox::question()```
+4. ```MessageBox::warning()```
+
+```c++
+//example
+QMessageBox::critical(this,"title","please input");
+QMessageBox::information(this,"title","please input");
+QMessageBox::warning(this,"titil","input");
+QMessageBox::question(this,"title","sure?",QMessageBox::Yes | QMessageBox::No,QMessageBox::Yes);
+```
+
+**Other Standard Dialog**
+
+1. ```QColorDialog```
+2. ```QFileDialog```
+3. ```QFontDialog```
+
+```c++
+//QcolorDialog
+QColor Q1 = QColorDialog::getColor(QColor(255,0,0));
+qDebug()<< Q1.red() << Q1.green() <<Q1.blue();
+
+//QfileDialog
+QString dir = QFileDialog::getOpenFileName(this,"name","~/");
+qDebug()<< dir;
+
+//QfontDialog
+bool flag;
+QFont f1 = QFontDialog::getFont(&flag,this);
+qDebug()<< f1.family() ;
+```
 
