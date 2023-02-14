@@ -8,7 +8,7 @@ Qt setting file,please don't alter it if you don't know how to use this file. Lo
 
 ### ```ObjectTree```
 
-![na](/home/xxxzh/Desktop/QTcode/Pictures/duixiangshu.png)
+![na](./Pictures/duixiangshu.png)
 
 using ```new``` to create object,it will be released automatically if assigned parent class. 
 
@@ -74,7 +74,7 @@ The signal **send** and **receive** is irrelevant
 
 ### QMainWindow
 
-![s](/home/xxxzh/Desktop/QTcode/Pictures/mainwindows.png)
+![s](./Pictures/mainwindows.png)
 
 **Tips: only exist one using ```set```, allow exist multiple using ```add```**
 
