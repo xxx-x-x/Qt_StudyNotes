@@ -150,3 +150,7 @@ QFont f1 = QFontDialog::getFont(&flag,this);
 qDebug()<< f1.family() ;
 ```
 
+### LayOut
+
+![1](./Pictures/layout.png)
+
