@@ -8,6 +8,7 @@ class Widget : public QWidget
     Q_OBJECT
 
 public:
+    QWidget w1;
     Widget(QWidget *parent = nullptr);
     ~Widget();
 };

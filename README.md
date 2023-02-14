@@ -33,5 +33,68 @@ using ```new``` to create object,it will be released automatically if assigned p
 
 ```btn->move()``` to set button 's position in main window panel.
 
+```Qstring::ToUtf8()``` turn ```string``` to ```ByteArray```
+
+```Qstring::data()``` turn ```ByteArray``` to ```char * ```
+
 ### ```Signal and slot```
-The signal **send** and **recv** is irrelevant
+The signal **send** and **receive** is irrelevant
+
+**Signal**
+
+1. Signal need declare, don't need implement.
+2. Return void.
+3. You must write it under ```signal:``` of the ```.h``` file.
+
+**Slot**
+
+1. Slot need declare and implement.
+2. Return void.
+3. You can write it anywhere in the ```.h``` file.
+
+
+
+**Function Overloading**
+
+```C++
+	void (teacher::*teacherhung)() = &teacher::hungry;
+    void (student::*studenttreat)() = &student::treat;
+    connect(te,teacherhung,su,studenttreat);
+```
+
+**Connect**
+
+1. Parameter: send,signal,receive,slot
+2. Using ```emit``` to call custom signal.
+
+**Disconnect**
+
+1. Parameter: send,signal,receive,slot
+2. Just interrupt the connect that ```signal ``` and ```slot```
+
+### QMainWindow
+
+![s](https://yy.xx-xzh.xyz/pictures/mainwindows.png)
+
+**Tips: only exist one using ```set```, allow exist multiple using ```add``` **
+
+**QmenuBar**
+
+1. ```QmenuBar -> Qmenu -> action ```
+2.  ```setMenuBar```  
+
+**QToolBar**
+
+1. ```QToolBar -> action ```
+2.  ```addToolBar```
+
+**QStatusBar**
+
+1. ```QStatusBar -> QLabel ```
+2. ```addStatusBar```
+
+**QDockWidget**
+
+1. ```QDockWidget```
+2. ```addDockWidget```
+

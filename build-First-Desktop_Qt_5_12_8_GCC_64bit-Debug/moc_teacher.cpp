@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'mybutton.h'
+** Meta object code from reading C++ file 'teacher.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../First/mybutton.h"
+#include "../First/teacher.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'mybutton.h' doesn't include <QObject>."
+#error "The header file 'teacher.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.12.8. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -20,27 +20,27 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_mybutton_t {
+struct qt_meta_stringdata_teacher_t {
     QByteArrayData data[3];
-    char stringdata0[15];
+    char stringdata0[16];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_mybutton_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_teacher_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_mybutton_t qt_meta_stringdata_mybutton = {
+static const qt_meta_stringdata_teacher_t qt_meta_stringdata_teacher = {
     {
-QT_MOC_LITERAL(0, 0, 8), // "mybutton"
-QT_MOC_LITERAL(1, 9, 4), // "open"
-QT_MOC_LITERAL(2, 14, 0) // ""
+QT_MOC_LITERAL(0, 0, 7), // "teacher"
+QT_MOC_LITERAL(1, 8, 6), // "hungry"
+QT_MOC_LITERAL(2, 15, 0) // ""
 
     },
-    "mybutton\0open\0"
+    "teacher\0hungry\0"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_mybutton[] = {
+static const uint qt_meta_data_teacher[] = {
 
  // content:
        8,       // revision
@@ -62,20 +62,20 @@ static const uint qt_meta_data_mybutton[] = {
        0        // eod
 };
 
-void mybutton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void teacher::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<mybutton *>(_o);
+        auto *_t = static_cast<teacher *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->open(); break;
+        case 0: _t->hungry(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (mybutton::*)();
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&mybutton::open)) {
+            using _t = void (teacher::*)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&teacher::hungry)) {
                 *result = 0;
                 return;
             }
@@ -84,32 +84,32 @@ void mybutton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject mybutton::staticMetaObject = { {
-    &QPushButton::staticMetaObject,
-    qt_meta_stringdata_mybutton.data,
-    qt_meta_data_mybutton,
+QT_INIT_METAOBJECT const QMetaObject teacher::staticMetaObject = { {
+    &QObject::staticMetaObject,
+    qt_meta_stringdata_teacher.data,
+    qt_meta_data_teacher,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *mybutton::metaObject() const
+const QMetaObject *teacher::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *mybutton::qt_metacast(const char *_clname)
+void *teacher::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_mybutton.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_teacher.stringdata0))
         return static_cast<void*>(this);
-    return QPushButton::qt_metacast(_clname);
+    return QObject::qt_metacast(_clname);
 }
 
-int mybutton::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int teacher::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QPushButton::qt_metacall(_c, _id, _a);
+    _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -125,7 +125,7 @@ int mybutton::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void mybutton::open()
+void teacher::hungry()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }

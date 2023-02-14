@@ -17,11 +17,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
+    mainwindows.cpp \
     mybutton.cpp \
+    student.cpp \
+    teacher.cpp \
     widget.cpp
 
 HEADERS += \
+    mainwindows.h \
     mybutton.h \
+    student.h \
+    teacher.h \
     widget.h
 
 TRANSLATIONS += \

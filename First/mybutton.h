@@ -11,8 +11,12 @@ public:
     explicit mybutton(QWidget *parent = nullptr);
     ~mybutton();
 
+    void setNum(int n);
+    int getNum();
 signals:
-
+    void open();
+private:
+    int num;
 };
 
 #endif // MYBUTTON_H
